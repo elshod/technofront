@@ -1,0 +1,99 @@
+@import '../../assets/css/var.scss';
+
+.map {
+    width: 100%;
+}
+.contact {
+    &__list {
+        background-color: #EDF2F6;
+        border-radius: 8px;
+    }
+    &__item {
+        padding: 15px 30px;
+        &:hover {
+            background-color: #DAE4ED;
+        }
+
+    }
+    &__address {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    &__phone {
+        color: $dark-blue;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__email {
+        border-top: 1px solid #C8CACB;
+        color: $dark-blue;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        padding-top: 18px;
+        margin-bottom: 30px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__worktime {
+        display: flex;
+        img {
+            margin-right: 10px;
+        }
+        &--top {
+            color: #838688;
+            margin-bottom: 10px;
+        }
+        &--bottom {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    &__body {
+        padding: 0px 30px 30px;
+    }
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+    &__form {
+        margin-top: 20px;
+        background-color: #EDF2F6;
+        padding: 30px;
+        border-radius: 8px;
+        width: 370px;
+        margin-right: 57px;
+        button {
+            padding: 16px 0px;
+            border-radius: 4px;
+            background-color: $dark-blue;
+            color: #fff;
+            display: block;
+            width: 100%;
+            border:0;
+        }
+        label {
+            margin-bottom: 20px;
+            display: block;
+            input {
+                margin-top: 8px;
+                border:1px solid #EAEAF0;
+                background: #fff;
+                padding: 16px 20px;
+                display: block;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__info {
+    }
+}
+ul.circle {
+    li {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}

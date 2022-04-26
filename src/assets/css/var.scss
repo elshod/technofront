@@ -1,0 +1,26 @@
+$dark-blue:#2A5275;
+$dark-dark-blue:#243C53;
+$blue: #4878A6;
+$orange: #F37748;
+$light-grey: #C8CACB;
+$dark-grey: #838688;
+$green: #48A69B;
+$red: #D73838;
+$black: #0E1821;
+
+@mixin fb($w) {
+    flex-basis: $w;
+    max-width: $w;
+    width: $w;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,44 @@
+ul.menu {
+    border:1px solid #EAEAF0;
+    border-radius: 8px;
+    position: sticky;
+    top: 158px;
+    background-color: #fff;
+    li:last-child a {
+        color: #F15152;
+        border-top: 1px solid #EAEAF0;
+    }
+    a {
+        padding: 17.5px 20px;
+        font-weight: 500;
+        display: block;
+        &:hover {
+            background-color: #EDF2F6;
+        }
+    }
+}
+select.select {
+    border:1px solid #EAEAF0;
+    padding: 13.5px 20px;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 240px;
+    background-image: url('../img/arrow_down.png');
+    background-position: 92% center;
+    background-repeat: no-repeat;
+}
+.authbox {
+    border:1px solid #EAEAF0;
+    padding: 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    a {
+        background-color: #2A5275;
+        color: #fff;
+        padding: 16px 26px;
+        display: inline-block;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+}

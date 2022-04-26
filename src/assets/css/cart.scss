@@ -1,0 +1,210 @@
+@import './var.scss';
+
+.cart {
+    &__msg {
+        color: $red;
+        margin-bottom: 10px;
+    }
+    &__item {
+        border:1px solid #C8CACB;
+        padding: 30px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        .btitle {
+            margin-bottom: 30px;
+        }
+    }
+    &__product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0px;
+        border-bottom: 1px solid #C8CACB;
+        &:last-child {
+            border-bottom: unset;
+        }
+    }
+    &__img {
+        @include fb(80px);
+        height: 80px;
+        @include bg();
+        display: block;
+        margin-right: 20px;
+    }
+    &__title {
+        @include fb(280px);
+        
+    }
+    &__trash {
+        @include fb(48px);
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: unset;
+        border:0;
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+        div {
+            white-space: nowrap;
+        }
+        .new {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .old {
+            font-weight: 700;
+            color: #838688;
+            text-decoration: line-through;
+        }
+    }
+    &__count {
+        display: flex;
+        align-items: center;
+        input {
+            @include fb(48px);
+            height: 48px;
+            border:1px solid #C8CACB;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0px 6px;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        button {
+            background: unset;
+            border:0;
+            font-size: 24px;
+        }
+    }
+    &__next.btn {
+        padding: 13px 75px;
+        display: block;
+    }
+    &__checkout.btn {
+        
+        padding: 16px 0px;
+        display: block;
+        width: 100%;
+        background-color: $blue;
+        &.disabled {
+            background-color: #838688;
+            pointer-events: none;
+        }
+    }
+    &__all {
+        background-color: #EDF2F6;
+        padding: 30px;
+        border-radius: 8px;
+        position: sticky;
+        top: 165px;
+        &--item {
+            margin-bottom: 20px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                &:first-child {
+                    color: #838688;
+                }
+            }
+            
+        }
+    }
+    &__summa {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: end;
+        padding-top: 30px;
+        border-top: 1px solid #C8CACB;
+        &--title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &--value {
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+}
+.checkout {
+    .clear {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        input {
+            display: inline-block;
+            width: unset;
+            padding: 0;
+            margin: 0;
+            margin-right: 10px;
+        }
+    }
+    &__delivery {
+        border-top: 1px solid #C8CACB;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    select {
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+    }
+    &__radio {
+        input {
+            display: none;
+            &:checked + label {
+                border-color: $blue;
+                &::before{
+                    border-color: $blue;
+                }
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $blue;
+                    position: absolute;
+                    left: 26px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+        }
+        label {
+            border: 1px solid #EAEAF0;
+            height: 48px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            color: #838688;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                border-color: $blue;
+                color: $blue;
+            }
+            &:before {
+                border:2px solid #EAEAF0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: inline-block;
+                content: '';
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

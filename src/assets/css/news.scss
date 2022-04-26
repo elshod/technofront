@@ -1,0 +1,31 @@
+@import './main.scss';
+
+.img__sticky {
+    position: sticky;
+    top: 155px;
+}
+.page {
+    &__category {
+        background-color: #EDF2F6;
+        padding: 40px 40px;
+        margin: 40px 0px;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        a {
+            display: flex;
+            align-items: center;
+            margin-right: 80px;
+            font-size: 20px;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}

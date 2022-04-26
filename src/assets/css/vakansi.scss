@@ -1,0 +1,56 @@
+.vakan {
+    &__title {
+        padding: 13px 30px;
+        background-color: #EDF2F6;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+        cursor: pointer;
+        &.show {
+            &:after {
+                transform: rotate(180deg);
+            }
+            &+.vakan__body {
+                height: auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+        &:after {
+            transition: 0.3s;
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 30px;
+            width: 13px;
+            height: 8px;
+            display: inline-block;
+            background-image: url('../img/arrow_down.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__body {
+        padding: 0px 30px;
+        border: 1px solid #EAEAF0;
+        height: 0;
+        transition: all 0.3s;
+        overflow: hidden;
+    }   
+    &__form {
+        padding: 30px;
+        border: 1px solid #EAEAF0;
+        border-radius: 8px;
+        margin-top: 0;
+        &--title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+
+}

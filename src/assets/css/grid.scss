@@ -1,0 +1,117 @@
+
+.col-6 {
+    @include fb(50%);
+    padding: 0px 10px;
+}
+.col-4 {
+    @include fb(33.33%);
+    padding: 0px 10px;
+}
+.col-8 {
+    @include fb(66.66%);
+    padding: 0px 10px;
+}
+.col-5 {
+    @include fb(41.67%);
+    padding: 0px 10px;
+}
+.offset-col-1 {
+    margin-left: 8.33%;
+}
+.col-7 {
+    @include fb(58.33%);
+    padding: 0px 10px;
+}
+.col-3 {
+    @include fb(25%);
+    padding: 0px 10px;
+}
+.col-9 {
+    @include fb(75%);
+    padding: 0px 10px;
+}
+
+@media (max-width:1024px){
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .col-md-5 {
+        @include fb(41.67%);
+        padding: 0px 10px;
+    }
+    .col-md-7 {
+        @include fb(58.33%);
+        padding: 0px 10px;
+    }
+    .col-md-6 {
+        @include fb(50%);
+        padding: 0px 10px;
+    }
+    .col-md-4 {
+        @include fb(33.33%);
+        padding: 0px 10px;
+    }
+    .col-md-8 {
+        @include fb(66.66%);
+        padding: 0px 10px;
+    }
+    .col-md-3 {
+        @include fb(25%);
+        padding: 0px 10px;
+    }
+    .col-md-9 {
+        @include fb(75%);
+        padding: 0px 10px;
+    }
+    .col-md-12{
+        @include fb(100%);
+        padding: 0px 10px;
+    }
+    .container {
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width:767px){
+    .col-sm-6 {
+        @include fb(50%);
+        padding: 0px 10px;
+    }
+    .col-sm-5 {
+        @include fb(41.67%);
+        padding: 0px 10px;
+    }
+    .col-sm-7 {
+        @include fb(58.33%);
+        padding: 0px 10px;
+    }
+    .col-sm-4 {
+        @include fb(33.33%);
+        padding: 0px 10px;
+    }
+    .col-sm-8 {
+        @include fb(66.66%);
+        padding: 0px 10px;
+    }
+    .col-sm-3 {
+        @include fb(25%);
+        padding: 0px 10px;
+    }
+    .col-sm-9 {
+        @include fb(75%);
+        padding: 0px 10px;
+    }
+    .col-sm-12{
+        @include fb(100%);
+        padding: 0px 10px;
+    }
+    .sm-order-1 {
+        order:1;
+    }
+    .sm-order-2 {
+        order:2;
+    }
+}
